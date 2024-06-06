@@ -1,6 +1,6 @@
 spring:
-#  application:
-#    name:user-center
+  #  application:
+  #    name:user-center
   datasource:
     druid:
       username: root
