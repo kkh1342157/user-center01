@@ -7,10 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @MapperScan("com.szu.usercenter.mapper")
 @SpringBootApplication
-public class UserCenterApplication {
+public class YuPaoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(UserCenterApplication.class, args);
+        SpringApplication.run(YuPaoApplication.class, args);
     }
 
 }

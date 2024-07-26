@@ -29,6 +29,7 @@ import static com.szu.usercenter.constant.UserConstant.USER_LOGIN_STATE;
 
 @RestController
 @RequestMapping("user")
+//@CrossOrigin(origins = "http://62.234.35.31",allowCredentials = "true")
 @CrossOrigin
 public class UserController {
 
@@ -49,7 +50,8 @@ public class UserController {
         }
         User user = userService.userLoign(userAccount, userPassword, request);
         if (user == null) {
-            return null;
+            return ResultUtils.error(ErrorCode.NO_PWD);
+//            return null;
         }
 //        return new BaseResponse<>(0,user,"ok");
         return ResultUtils.success(user);
@@ -101,6 +103,7 @@ public class UserController {
     @GetMapping("current")
     public BaseResponse<User> getCurrentUser(HttpServletRequest request){
         HttpSession session = request.getSession();
+        System.out.println(session.toString());
         User currentUser =  (User)session.getAttribute(USER_LOGIN_STATE);
         if (currentUser == null){
             return ResultUtils.error(ErrorCode.NO_LOGIN);

@@ -7,9 +7,9 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
 
-@ContextConfiguration(classes = UserCenterApplication.class)
-@SpringBootTest(classes = UserCenterApplication.class)
-class UserCenterApplicationTests {
+@ContextConfiguration(classes = YuPaoApplication.class)
+@SpringBootTest(classes = YuPaoApplication.class)
+class YuPaoApplicationTests {
 
     @Resource
     private UserMapper userMapper;

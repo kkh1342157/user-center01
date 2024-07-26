@@ -2,21 +2,18 @@ package com.szu.usercenter.service;
 
 import java.util.Date;
 
-import com.szu.usercenter.UserCenterApplication;
+import com.szu.usercenter.YuPaoApplication;
 import com.szu.usercenter.pojo.User;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 /**
  * 用户服务测试
  */
-@SpringBootTest(classes = UserCenterApplication.class)
-@ContextConfiguration(classes = UserCenterApplication.class)
+@SpringBootTest(classes = YuPaoApplication.class)
+@ContextConfiguration(classes = YuPaoApplication.class)
 class UserServiceTest {
 
     @Autowired

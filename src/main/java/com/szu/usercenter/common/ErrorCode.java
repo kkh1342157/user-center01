@@ -15,6 +15,7 @@ public enum ErrorCode {
 
     NO_LOGIN(40100,"未登录",""),
     NO_AUTH(40101,"无权限",""),
+    NO_PWD(40102,"密码错误","用户输入的密码错误"),
    SYSTEM_ERROR(50000,"系统异常","");
 
     private int code;

@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.szu</groupId>
-    <artifactId>user-center</artifactId>
+    <artifactId>yupao-backend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>user-center</name>
-    <description>user-center</description>
+    <name>yupao-backend</name>
+    <description>yupao-backend</description>
     <properties>
         <java.version>17</java.version>
     </properties>
